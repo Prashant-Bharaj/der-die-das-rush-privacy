@@ -5,13 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Der Die Das Rush</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #333; }
-        h2 { color: #555; margin-top: 30px; }
-        ul { margin: 10px 0; }
-        .delete-section { background: #f5f5f5; padding: 20px; border-radius: 5px; margin: 20px 0; }
-        .delete-link { display: inline-block; background: #4285f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .delete-link:hover { background: #3367d6; }
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+            color: #333;
+        }
+        h1 { 
+            color: #333; 
+            border-bottom: 3px solid #4285f4;
+            padding-bottom: 10px;
+        }
+        h2 { 
+            color: #555; 
+            margin-top: 30px; 
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #666;
+            margin-top: 20px;
+        }
+        ul { 
+            margin: 10px 0; 
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .delete-section { 
+            background: #f5f5f5; 
+            padding: 20px; 
+            border-radius: 5px; 
+            margin: 20px 0;
+            border-left: 4px solid #dc3545;
+        }
+        .delete-steps {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .delete-steps ol {
+            margin: 10px 0;
+        }
+        .contact-box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        a {
+            color: #4285f4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -51,14 +109,14 @@
     <ul>
         <li><strong>Firebase Authentication:</strong> Used for user account management</li>
         <li><strong>Cloud Firestore:</strong> Used for storing your game progress and statistics</li>
-        <li>Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+        <li>Firebase Privacy Policy: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
     </ul>
     
     <h3>4.2 Google AdMob</h3>
     <ul>
         <li>Used for displaying advertisements in the App</li>
         <li>AdMob may collect device information and usage data for personalized advertising</li>
-        <li>Google AdMob Privacy Policy: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+        <li>Google AdMob Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
         <li>You can opt out of personalized ads in your device settings</li>
     </ul>
     
@@ -81,44 +139,64 @@
     <h2>8. Account Deletion</h2>
     <div class="delete-section">
         <h3>How to Delete Your Account</h3>
-        <p>You can delete your Der Die Das Rush account and all associated data by following these steps:</p>
-        <ol>
-            <li>Open the Der Die Das Rush app on your device</li>
-            <li>Navigate to the Profile screen</li>
-            <li>If you're signed in, tap on "Sign Out" to access account deletion options</li>
-            <li>Alternatively, contact us directly at <strong>prashant.bharaj@gmail.com</strong> with the subject "Account Deletion Request"</li>
-            <li>Include your registered email address in the request</li>
-        </ol>
+        <p>You can delete your Der Die Das Rush account and all associated data directly from within the App. Follow these steps:</p>
+        
+        <div class="delete-steps">
+            <ol>
+                <li>Open the Der Die Das Rush app on your device</li>
+                <li>Navigate to the <strong>Profile</strong> screen (tap the profile icon in the top-right corner of the game screen)</li>
+                <li>If you're signed in, you will see a <strong>"Delete Account"</strong> button below the "Sign Out" button</li>
+                <li>Tap the <strong>"Delete Account"</strong> button</li>
+                <li>A confirmation dialog will appear asking you to enter your password</li>
+                <li>Enter your account password to confirm the deletion</li>
+                <li>Tap <strong>"Delete Account"</strong> to proceed</li>
+                <li>Your account and all data will be permanently deleted</li>
+            </ol>
+        </div>
+        
+        <p><strong>Alternative Method:</strong> If you are unable to access the App, you can also request account deletion by contacting us directly at <strong>prashant.bharaj@gmail.com</strong> with the subject "Account Deletion Request". Please include your registered email address in the request.</p>
         
         <h3>What Data Will Be Deleted?</h3>
-        <p>When you delete your account, the following data will be permanently deleted:</p>
+        <p>When you delete your account, the following data will be <span class="highlight">permanently deleted</span>:</p>
         <ul>
             <li>Your email address and authentication information</li>
-            <li>All game progress, scores, streaks, and statistics</li>
-            <li>All data stored in your account in Firebase</li>
+            <li>All game progress, scores, streaks, and statistics stored in the cloud</li>
+            <li>All data stored in your account in Firebase (Firestore database)</li>
+            <li>All local account data stored on your device</li>
         </ul>
         
-        <h3>Data Retention Period</h3>
-        <p>Account deletion requests are processed within 30 days. All your data will be permanently deleted within this timeframe. Some data may be retained for legal or regulatory purposes as required by law, but this will be minimal and only where necessary.</p>
+        <h3>Data Deletion Timeframe</h3>
+        <p>Account deletion is processed <strong>immediately</strong> when you confirm the deletion in the App. All your data will be permanently removed from our systems within <strong>24 hours</strong> of your request. Some data may be retained for legal or regulatory purposes as required by law, but this will be minimal and only where necessary.</p>
         
-        <p><strong>Note:</strong> Deleting your account is permanent and cannot be undone. All your game progress and data will be lost.</p>
+        <h3>Important Notes</h3>
+        <ul>
+            <li><strong>Permanent Action:</strong> Deleting your account is permanent and cannot be undone. All your game progress and data will be lost.</li>
+            <li><strong>Password Required:</strong> For security purposes, you must enter your account password to confirm account deletion.</li>
+            <li><strong>Guest Data:</strong> If you have been using the app in guest mode (without an account), your local game data will remain on your device until you uninstall the app.</li>
+            <li><strong>No Recovery:</strong> Once your account is deleted, you cannot recover your data. If you wish to use the app again, you will need to create a new account and start fresh.</li>
+        </ul>
     </div>
     
     <h2>9. Children's Privacy</h2>
     <p>Our App is suitable for users of all ages. We do not knowingly collect personal information from children under 13 without parental consent. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
     
     <h2>10. Data Retention</h2>
-    <p>We retain your information for as long as necessary to provide our services. If you delete your account, we will delete your associated data within 30 days, except where we are required to retain it for legal purposes.</p>
+    <p>We retain your information for as long as necessary to provide our services. If you delete your account, we will delete your associated data within 24 hours, except where we are required to retain it for legal purposes.</p>
     
     <h2>11. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
+    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
     
     <h2>12. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy or need to request account deletion, please contact us at:</p>
-    <p><strong>Email:</strong> prashant.bharaj@gmail.com</p>
-    <p><strong>Developer:</strong> PSB Applications</p>
+    <div class="contact-box">
+        <p>If you have any questions about this Privacy Policy, need to request account deletion, or have any privacy concerns, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:prashant.bharaj@gmail.com">prashant.bharaj@gmail.com</a></p>
+        <p><strong>Developer:</strong> PSB Applications</p>
+        <p><strong>Subject Line for Account Deletion:</strong> "Account Deletion Request"</p>
+    </div>
     
     <hr>
     <p><em>This Privacy Policy is effective as of January 2025.</em></p>
+    <p><em>For account deletion requests, please use the in-app feature or contact us at the email address above.</em></p>
 </body>
 </html>
+
